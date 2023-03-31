@@ -53,18 +53,17 @@ $SpoCred = Get-AutomationPSCredential -Name "SpoAppRegistration"
 Connect-PnPOnline -Url $SiteUrl -ClientId $SpoCred.UserName -ClientSecret $SpoCred.GetNetworkCredential().Password
   
 ### Certificates
-Like Credentials, the "Certificates" section can be used to upload certificates that can be used to authenticate to resources that require certificate authentication. 
-
-Connect-ExchangeOnline -CertificateThumbPrint "012THISISADEMOTHUMBPRINT" -AppID "36ee4c6c-0812-40a2-b820-b22ebd02bce3" -Organization "contosoelectronics.onmicrosoft.com"
-
+Like Credentials, the "Certificates" section can be used to upload certificates that can be used to authenticate to resources that require certificate authentication. The certificate thumbprint can be referenced within the script directly as though the certificate was stored in a local certificate store on a Windows server. 
+  
+#### Example:
+  
+Connect-ExchangeOnline -CertificateThumbPrint "5F5420CE49C87C4073E519825E97F73536604AA5" -AppID "36ee4c6c-0812-40a2-b820-b22ebd11cce3" -Organization "contosoelectronics.onmicrosoft.com"
   
 ### Managed Identity
 
 ### Azure Resources
 
 ### Other M365 Resources
-
-## Hybrid Worker
 
 ## Modules
 
@@ -74,3 +73,5 @@ Connect-ExchangeOnline -CertificateThumbPrint "012THISISADEMOTHUMBPRINT" -AppID 
 Write-Host/Write-Output
 
 ## Security
+  
+## Hybrid Worker
