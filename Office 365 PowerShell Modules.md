@@ -1,5 +1,5 @@
-# Last updated 03/28/2023
 # PowerShell Modules and Authentication Methods
+## Last updated 03/28/2023
 
 | Module | Connect with Client Secret | Connect with Certificate |
 | --- | --- | --- |
@@ -12,6 +12,8 @@
 | Microsoft.Online.SharePoint.PowerShell | N/A  (but can use App-Only Token)  | N/A  (but can use App-Only Token) |
 
 
-# Certificate Authentication
+## Certificate Authentication
 
-# Client Secret Authentication
+## Client Secret Authentication
+
+## Managed Identity
